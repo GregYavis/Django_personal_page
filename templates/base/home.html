@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greg</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <link href="{% static '/css/main.css' %}" rel="stylesheet">
+
+
+</head>
+<body>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card card-body h-100 border-info" id="profile-wrapper">
+                <img id="profile-pic"
+                     src="{% static 'images/Ab_3IGqlEg4.jpg' %}">
+                <hr>
+                <h3>I'm <span class="typed-text"></span><span
+                        class="cursor">&nbsp;</span></h3>
+                <script src="{% static 'js/typewrite.js' %}"></script>
+                <h3>Love coding</h3>
+                <h3 data-text='Contacts' class="anim">Contacts</h3>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="card card-body border-info">
+                <h4>My skills</h4>
+                <p>Python, Django, Git, Docker, PostgreSQL, MongoDB, Linux</p>
+                <ul class="social-links">
+                    <li><img class="social" src=
+                            "{% static 'images/facebook.png' %}"></li>
+                    <li><img class="social"
+                             src="{% static 'images/linkedin.png' %}"></li>
+                    <li><img class="social"
+                             src="{% static 'images/twitter.png' %}"></li>
+                    <li><img class="social"
+                             src="{% static 'images/youtube.png' %}"></li>
+                </ul>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-body h-100">
+                        <h5>ОПЫТ</h5>
+                        <hr>
+                        <p>В последние годы работал по другой специальности, а
+                            также проходил обучение без
+                            возможности работать. В свободное время продолжаю
+                            разработку своих небольших
+                            проектов, среди которых:
+                            Telegram-бот функционал которого – помощь в ведении
+                            домашнего финансового
+                            учёта. В качестве базы данных используется MongoDB,
+                            для обеспечения асинхронности
+                            применяется библиотека motor. Сам бот написан с
+                            использованием фреймворка Aiogram.
+                            Так же в этом проекте использовал Docker
+                            (https://github.com/GregYavis/TelegramulaBot).
+                            Программное обеспечения для логирования совершенных
+                            с компьютера действий –
+                            в дальнейшем планируется создание на этой базе
+                            системы контроля доступа или же
+                            системы родительского контроля
+                            (https://github.com/GregYavis/KEYlogging).
+                            Пара небольших программ, взаимодействующих с
+                            Instagram API и VK API – одни из
+                            первых проектов, в которых я начал использовать
+                            объектно-ориентированное
+                            программирование
+                            (https://github.com/GregYavis/Instagram_posting,
+                            https://github.com/GregYavis/LikesDeleter_with_VKAPI). </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <br>
+    <div class="row">
+        <div class="col-md-9">
+            <div class="card card-body h-100">
+                <h5>About me</h5>
+                <hr>
+                <p>В свободное время тружусь над укреплением и дальнейшим
+                    развитием своих
+                    текущих знаний. Базовый синтаксис языка изучал с помощью
+                    книг Марка Лутца: «Изучаем
+                    Python». Так же продолжаю изучение алгоритмов и структур
+                    данных: Адитья Бхаргава
+                    «Грокаем алгоритмы», Томас Кормен «Алгоритмы: построение и
+                    анализ»
+                    В команде хотел бы в том числе получить более углублённые
+                    навыки разработки
+                    бэкенда, работы с базами данных, Pyramid/Aiohttp, Pandas, а
+                    также в целом расширить
+                    свой кругозор в этой сфере. </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-body h-100">
+                <h5>Education</h5>
+                <hr>
+                <p>01.09.2016 – 04.06.2020
+                    Бакалавр. Донецкий Национальный Университет,
+                    Физико-технический университет,
+                    кафедра радиофизики, направление обучения – информационная
+                    безопасность.
+                    01.09.2010 -15.01.2014
+                    Неоконченное образование. Донецкий Национальный Технический
+                    Университет,
+                    Электротехнический факультет, Электропривод и автоматизация
+                    промышленных установок и
+                    технологических комплексов. </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card card-body h-100">
+                <h5>Work expirience</h5>
+                <hr>
+                <p>TEXT</p>
+
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+
+</body>
+</html>

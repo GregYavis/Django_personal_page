@@ -1,0 +1,161 @@
+#profile-wrapper {
+    text-align: center;
+}
+
+#profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-links ul, li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.social {
+    width: 20px;
+    height: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container h3 span.typed-text {
+    font-weight: normal;
+
+    border-radius: 3px;
+}
+
+.container h3 span.cursor {
+    display: inline-block;
+    background-color: #dd7732;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+    border-radius: 3px;
+}
+
+.container h3 span.cursor.typing {
+    animation: none;
+    border-radius: 3px;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #dd7732;
+    }
+    49% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: #dd7732;
+    }
+    99% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #dd7732;
+    }
+}
+
+
+.anim{
+	text-align: center;
+}
+
+.anim::after{
+    position: absolute;
+    content: attr(data-text);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+
+}
+.anim:hover{
+    animation: glitch 4s infinite;
+}
+.anim:hover::after{
+    animation: clip 4s infinite;
+}
+
+@keyframes glitch {
+
+	30%{
+		text-shadow: 4px -4px 0px rgba(60, 85, 255, 1);
+	}
+	32%{
+		text-shadow: -4px 4px 0px rgba(255,85,0,1);
+	}
+	0%, 28%, 34%{
+		text-shadow: none;
+	}
+	31%,32%{
+		transform: translate(-7px,7px);
+	}
+	32%,33%{
+		transform: translate(7px,-7px);
+	}
+	31%,33%{
+		transform: translatex(0);
+	}
+
+
+	50%{
+		text-shadow: 4px 4px 0px rgba(60, 85, 255, 1);
+
+	}
+	52%{
+		text-shadow: -4px -4px 0px rgba(255,85,0,1);
+
+	}
+	48%, 54%{
+		text-shadow: none;
+	}
+	49%,52%{
+		transform: translatex(0);
+	}
+	50%{
+		transform: translate(7px,7px);
+	}
+	51%{
+		transform: translate(-7px,-7px);
+	}
+}
+
+@keyframes clip{
+	28%, 31%{
+
+        left: 0;
+        visibility: visible;
+				color: #FFF;
+	}
+	30%{
+        clip: rect(60px, 999px, 80px, 0px);
+        left: -5px;
+				color: #D1C9B8;
+    }
+    48%, 52%{
+
+        left: 0;
+        visibility: visible;
+				color: #FFF;
+	}
+	50%{
+        clip: rect(30px, 999px, 55px, 0px);
+        left: 5px;
+				color: #D1C9B8;
+    }
+
+}
